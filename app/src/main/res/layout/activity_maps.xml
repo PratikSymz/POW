@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context="rs.emergency.MapsActivity"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/transparentbkg"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/B_mTemple"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:src="@drawable/om"
+        android:backgroundTint="#FFA500"
+        android:layout_marginEnd="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/B_mMosque" />
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Synagogue"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/B_mSynagogue"
+        android:layout_toStartOf="@+id/B_mTemple"
+        android:id="@+id/textView" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/B_mMosque"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:src="@drawable/mosque"
+        android:backgroundTint="#a4c639"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/B_mChurch" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Temple"
+        android:id="@+id/one"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/B_mTemple"
+        android:layout_toEndOf="@+id/textView" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/B_mChurch"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:src="@drawable/church"
+        android:backgroundTint="#551a8b"
+        android:layout_marginEnd="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:text="Mosque"
+        android:id="@+id/two"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/B_mMosque"
+        android:layout_toEndOf="@+id/B_mTemple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/B_mSynagogue"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:src="@drawable/synagogue"
+        android:backgroundTint="#fffdd0"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="18dp" />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Church"
+        android:id="@+id/three"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/B_mChurch"
+        android:layout_toEndOf="@+id/B_mMosque" />
+</RelativeLayout>
+    </RelativeLayout>
